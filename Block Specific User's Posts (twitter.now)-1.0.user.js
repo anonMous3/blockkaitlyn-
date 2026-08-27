@@ -15,6 +15,9 @@
 
   const STORAGE_KEY = 'blocked_users_twitternow';
 
+  // Default usernames blocked out of the box (lowercase, no @)
+  const DEFAULT_BLOCKED_USERS = ['kaitlyn', 'not_lake', 'lake', 'karaa', 'elonmask'];
+
   function normalize(name) {
     return name.trim().toLowerCase().replace(/^@/, '');
   }
@@ -22,9 +25,9 @@
   function loadBlockedUsers() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : [];
+      return raw ? JSON.parse(raw) : DEFAULT_BLOCKED_USERS.slice();
     } catch (e) {
-      return [];
+      return DEFAULT_BLOCKED_USERS.slice();
     }
   }
 
