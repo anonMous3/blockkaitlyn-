@@ -1,6 +1,6 @@
 # BlockKaitlyn
 
-A Tampermonkey userscript for automatically hiding posts from a specific user on Twitter/X.
+A Tampermonkey userscript for automatically hiding posts from a specific user on Twitter.now.
 
 ## 🚀 Installation
 
@@ -48,5 +48,5 @@ The complete source code is available in this repository:
 
 ## ⚠️ Disclaimer
 
-This is an unofficial browser userscript and is not affiliated with or endorsed by Twitter/X.
+This is an unofficial browser userscript and is not affiliated with or endorsed by Twitter.now
 
